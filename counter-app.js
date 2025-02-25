@@ -23,9 +23,6 @@ export class CounterApp extends DDDSuper(I18NMixin(LitElement)) {
     this.count = 5;
     this.min = 5;
     this.max = 25;
-    // this.plusButton = "+1";
-    // this.minusButton = "-1";
-    // this.resetButton = "Reset";
 
     this.t = this.t || {};
     this.t = {
@@ -48,9 +45,6 @@ export class CounterApp extends DDDSuper(I18NMixin(LitElement)) {
       count: { type: Number, reflect: true },
       min: { type: Number },
       max: { type: Number },
-      // plusButton: { type: String },
-      // minusButton: { type: String },
-      // resetButton: { type: String },
     };
   }
 
@@ -60,8 +54,6 @@ export class CounterApp extends DDDSuper(I18NMixin(LitElement)) {
     css`
       :host {
         display: block;
-        /* color: var(--ddd-theme-primary);
-        background-color: var(--ddd-theme-accent); */
         font-family: var(--ddd-font-navigation);
       }
       :host([count="18"]) .counter {
